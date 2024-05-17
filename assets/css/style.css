@@ -106,7 +106,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #F7DCB9;
+  background: linear-gradient(45deg, #DEAC80 30%, #F7DCB9 100%);
   box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
   z-index: 997;
   padding: 15px 0;
@@ -518,13 +518,127 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #34b7a7;
+  background: #B5C18E;
   bottom: 0;
   left: calc(50% - 25px);
 }
 
 .section-title p {
   margin-bottom: 0;
+}
+
+.profile-detail {
+  text-align: justify;
+}
+
+.secondary-img-profile {
+  margin: 30px 40px 10px 50px;
+  filter: blur(4px);
+}
+
+.primer-img-profile {
+  margin: 30px 100px 30px 15px; /* Atas, kanan, bawah, kiri */
+}
+
+/*--------------------------------------------------------------
+# Skill Section
+--------------------------------------------------------------*/
+.skill-article {
+  margin-top: 20px;
+}
+
+.skill-article h2 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 26px;
+  color: #555555;
+}
+
+.skills-section {
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(45deg, #B5C18E 30%, #F7DCB9 100%);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.skills-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.skills-section h2::after {
+  content: '';
+  width: 50%;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  transition: transform 0.3s, background 0.3s;
+  text-align: center;
+  width: 80px;
+  cursor: pointer;
+}
+
+.icon-container {
+  background: #fff;
+  border-radius: 50%;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.icon-container img {
+  width: 24px;
+  height: 24px;
+}
+
+.skill i {
+  font-size: 3em;
+  color: #B99470;
+  transition: filter 0.3s;
+}
+
+.skill p {
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: #000000;
+}
+
+.skill:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.skill:hover .icon-container {
+  background: #f0f0f0;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.skill.clicked i {
+  filter: grayscale(100%);
 }
 
 /*--------------------------------------------------------------
@@ -1262,7 +1376,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #F7DCB9;
+  background: linear-gradient(45deg, #F7DCB9 0%, #DEAC80 100%);
   padding: 30px 0;
   color: #222222;
   font-size: 14px;
@@ -1275,5 +1389,5 @@ section {
 }
 
 #footer .credits a {
-  color: #34b7a7;
+  color: #2c3a00;
 }
