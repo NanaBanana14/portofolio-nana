@@ -1077,7 +1077,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #34b7a7;
+  background: #B99470;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1190,11 +1190,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #34b7a7;
+  border: 1px solid #B99470;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #34b7a7;
+  background-color: #B99470;
 }
 
 .portfolio-details .portfolio-info {
@@ -1279,7 +1279,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #34b7a7;
+  background: #B99470;
   color: #fff;
 }
 
